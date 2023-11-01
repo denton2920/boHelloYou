@@ -10,11 +10,11 @@ function stukje1(){
     console.log("Je bent lekker met je vrienden buiten aan het spelen tot dat er een flinke storm aan komt." )
     console.log("Je wilt eigenlijk gaan kijken wat er aan de hand is maar je vrienden willen, dat je wat anders doet.")
     var verhaal = readlineSync.question("\na je gaat naar huis \nb je blijft buiten spelen \nc je gaat op de storm af\n")
-    if (verhaal = ("a")){
+    if (verhaal == ("a")){
         stukje2()
-    }else if(verhaal = ("b")){
+    }else if(verhaal == ("b")){
         stukje3()
-    }else if(verhaal = ("c")){
+    }else if(verhaal == ("c")){
         stukje8()
     }
     else{
@@ -31,9 +31,9 @@ function stukje2(){
 function stukje3(){
     console.log("Het buiten spelen bevalt wel, maar er komt iemand naar je toe. Je ziet een tak leggen.")
     var verhaal = readlineSync.question("\na je pakt de tak op \nb je speelt veder\n ")
-    if(verhaal = ("a")){
+    if(verhaal == ("a")){
         stukje4()
-    }else if(verhaal = ("b")){
+    }else if(verhaal == ("b")){
         stukje9()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -47,9 +47,9 @@ function stukje4(){
     console.log("de stem die je naam zei zegt ik moet je iets belangrijks zeggen.")
     console.log(". Je hoort hem aan en je komt er achter dat, hij je twee keuzes geeft.")
     var verhaal = readlineSync.question("\na je gaat met hem mee. De strijd aan tegen het kwaad  \nje gaat naar zijn schuilplaats waar het veilig is\n ")
-    if(verhaal = ("a")){
+    if(verhaal == ("a")){
         stukje5()
-    }else if(verhaal = ("b")){
+    }else if(verhaal == ("b")){
         stukje2()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -61,9 +61,9 @@ function stukje5(){
     console.log("Je ziet dat de gedaante een elf is en je vraagt hem waarom hij naar jou kwam, want hij kon naar heel veel andere mensen gaan. ")
     console.log("De elf zei, Mijn naam is mees en Je bent een van de 100 mensen op de wereld met het puurste hard.")
     var verhaal1 = readlineSync.question("\na je geloofd hem \nje geloofd hem niet\n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje6()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje13()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -76,9 +76,9 @@ function stukje6(){
     console.log("Mees zei we proberen alle 100 mensen met het puurste hard naar het strijd velt te halen.")
     console.log("Per 25 mensen met het puurste hard komt er een speciale kracht vrij, die de duivel kan weg vegen en iedereen heeft zijn eigen afzonderlijke kracht.")
     var verhaal1 = readlineSync.question("\na je vraagt naar jouw super kracht \njullie zijn bijna bij het strijdt veld\n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje7()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje15()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -89,10 +89,10 @@ function stukje6(){
 function stukje7(){
     console.log("je hebt de kracht:")
     var verhaal1 = readlineSync.question("\na vuur \nelektriciteit\n")
-    if(verhaal1 = ("a")){
-        stukje1()
-    }else if(verhaal1 = ("b")){
-        stukje1()
+    if(verhaal1 == ("a")){
+        stukje17()
+    }else if(verhaal1 == ("b")){
+        stukje18()
     }else{
         console.log("antwoordt alleen met a of b")
         stukje7()
@@ -105,9 +105,9 @@ function stukje8(){
     console.log("Jullie vechten samen tegen de gedaante.")
     console.log("Het gevecht is bestreden en de elf zegt dat hij mees heet.")
     var verhaal1 = readlineSync.question("\na Je ontdekt dat je een geheime kracht hebt  \nb je vecht met een zwaart \n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje7()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje16()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -119,9 +119,9 @@ function stukje9(){
     console.log("Jij en je vrienden zijn nog steeds lekker aan het spelen, maar de storm wordt steeds erger. Op ")
     console.log("Op eens wordt je omsingelt door monsters maar jullie zien een opening wat gaan jullie doen.")
     var verhaal1 = readlineSync.question("\na jullie glippen door de opening en gaan naar huis   \nb jullie gaan de strijdt aan  \n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje2()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje10()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -132,9 +132,9 @@ function stukje9(){
 function stukje10(){
     console.log("Jij en je vrienden gaan de strijdt aan met de monsters, je ontdekt dat je een speciale kracht hebt")
     var verhaal2 = readlineSync.question("\na je gebruikt de kracht \nb je houd de kracht geheim  \n")
-    if(verhaal2 = ("a")){
+    if(verhaal2 == ("a")){
         stukje11()
-    }else if(verhaal2 = ("b")){
+    }else if(verhaal2 == ("b")){
         stukje12()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -158,9 +158,9 @@ function stukje12(){
 function stukje13(){
     console.log("Je gelooft de elf niet. De elf wilt het uitleggen.")
     var verhaal1 = readlineSync.question("\na je luistert naar zijn verhaal\nb je gaat naar huis \n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje14()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje2()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -173,9 +173,9 @@ function stukje14(){
     console.log("Ze hebben met ons samen een gevecht gehad tegen het kwaad. Het was het zwaarste gevecht wat we ooit hebben gehad.")
     console.log(". Maar blijkbaar hebben we het kwaad nog niet helemaal verdreven.")
     var verhaal1 = readlineSync.question("\na je geloofd hem nu wel \nb je gaat als nog naar huis \n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje15()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje2()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -186,9 +186,9 @@ function stukje14(){
 function stukje15(){
     console.log("Jullie zijn nu bij het strijd veld en jullie gaan het gevecht aan maar je ontdekt dat je een geheime kracht hebt waar mee je de strijd aan kan gaan")
     var verhaal1 = readlineSync.question("\na je gebruikt je kracht \nb je gebruikt je kracht niet\n")
-    if(verhaal1 = ("a")){
+    if(verhaal1 == ("a")){
         stukje7()
-    }else if(verhaal1 = ("b")){
+    }else if(verhaal1 == ("b")){
         stukje16()
     }else{
         console.log("antwoordt alleen met a of b")
@@ -202,16 +202,77 @@ function stukje16(){
     einde()
 }
 
-function stukje17(){}
+function stukje17(){
+    console.log("De kracht vuur is een behoorlijke sterke kracht en door om, ook moeilijk te bestuderen. Je hebt de kracht nog niet onder controle.")
+    var verhaal1 = readlineSync.question("\na je kan naar mees zijn schuilplaats en daar veder oefenen  \nje gaat ten strijd\n")
+    if(verhaal1 == ("a")){
+        stukje19()
+    }else if(verhaal1 == ("b")){
+        stukje16()
+    }else{
+        console.log("antwoordt alleen met a of b")
+        stukje17()
+    }
+}
 
-function stukje18(){}
+function stukje18(){
+    console.log("Je hebt de kracht elektriciteit dit is een sterke kracht wat redelijk hand baar is. Je bent snel gewend aan de kracht dus je bent helemaal klaar voor het gevecht, maar de voorbereiding is slecht.")
+    var verhaal1 = readlineSync.question("\na je gaan de andere 99 mensen verzamelen   \nb je bent klaar om het gevecht aan te gaan\n")
+    if(verhaal1 == ("a")){
+        stukje19()
+    }else if(verhaal1 == ("b")){
+        stukje21()
+    }else{
+        console.log("antwoordt alleen met a of b")
+        stukje18()
+    }
+}
 
-function stukje19(){}
+function stukje19(){
+    console.log("je bent bij zijn schuilplaats gearriveerd, maar het gevaar wordt steeds dreigender. Mees zegt: je kunt hier niet meer schuilen. Je bent aan het denken. Wat moet ik nu doen. Je hebt 2 opties in je hoofd")
+    var verhaal1 = readlineSync.question("\na Ik ga helpen om de juiste mensen te vinden \nb je gaat testrijd en kan een kracht kiezen\n")
+    if(verhaal1 == ("a")){
+        stukje20()
+    }else if(verhaal1 == ("b")){
+        stukje7()
+    }else{
+        console.log("antwoordt alleen met a of b")
+        stukje19()
+    }
+}
 
-function stukje20(){}
+function stukje20(){
+    console.log("We hebben nu genoeg mensen gevonden. we kunnen strijd voeren tegen het kwaad. het is een vermoeiende strijdt, maar uiteindelijk hebben we toch gewonnen om dat we 4 verschillend krachten hebben door de 100 mensen. Die krachten zijn zo sterk dat het kwaad niet te dicht in de buurt kon komen. Nu dat het kwaad verslagen is kunnen we weer lang en gelukkig leven.")
+    einde()
+}
 
-function stukje21(){}
+function stukje21(){
+    console.log("Je bent midden in het gevecht, maar je merkt dat het niet lekker gaat. Je bent met iemand in gevecht en je moet hem ontwijken.")
+    var verhaal1 = readlineSync.question("\na je stapt naar rechts \nb je stapt naar links\n")
+    if(verhaal1 == ("a")){
+        stukje16()
+    }else if(verhaal1 == ("b")){
+        stukje22()
+    }else{
+        console.log("antwoordt alleen met a of b")
+        stukje21()
+    }
+}
 
-function stukje22(){}
 
-function einde(){}
+function stukje22(){
+    console.log("je hebt hem kunnen ontwijken. Je merkt dat je krachtiger wordt, dit komt omdat er steeds meer mensen aansluiten hierdoor wordt je sterker. Stukje bij beetje worden de vijanden verslagen, totdat iedereen verslagen is. Je hebt gewonnen!!")
+    einde()
+}
+
+function einde(){
+    var verhaal1 = readlineSync.question("Dit is het verhaal. Wil je opnieuw spelen? \nja \n nee \n")
+    if (verhaal1 == ("ja")){
+        stukje1()
+    } else if (verhaal1 == ("nee")){
+        console.log("bedankt voor het spelen")
+    } else {
+        console.log("beantwoordt allen met ja of nee")
+        einde()
+    }
+}
